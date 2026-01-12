@@ -32,3 +32,14 @@ Reason:
 
 - Aligns with my strengths and long-term goals
 - Frontends are added only when explicitly needed
+
+## Dependency Management
+
+uv is the default dependency and virtual environment manager.
+
+Reason:
+
+- Extremely fast
+- Single tool for venv + deps
+- Simple mental model
+- Actively developed and widely adopted

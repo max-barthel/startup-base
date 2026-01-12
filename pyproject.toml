@@ -4,4 +4,7 @@ version = "0.1.0"
 description = "Personal baseline repository for new projects"
 requires-python = ">=3.12"
 
+[dependency-groups]
+dev = []
+
 [tool]

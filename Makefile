@@ -1,4 +1,4 @@
-.PHONY: help
+.PHONY: help setup test lint run
 
 help:
 	@echo "Available commands:"
@@ -6,3 +6,7 @@ help:
 	@echo "  make test    - run tests"
 	@echo "  make lint    - run linters"
 	@echo "  make run     - run the application"
+
+setup:
+	uv venv
+	uv sync
