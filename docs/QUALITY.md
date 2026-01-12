@@ -1,0 +1,9 @@
+# Quality Standards
+
+All projects must:
+
+- Format and lint cleanly
+- Pass tests
+- Have type checking enabled
+
+Code that does not pass `make lint` or `make test` is not considered valid.

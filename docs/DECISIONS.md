@@ -43,3 +43,17 @@ Reason:
 - Single tool for venv + deps
 - Simple mental model
 - Actively developed and widely adopted
+
+## Code Quality
+
+Default tools:
+
+- ruff for linting and formatting
+- mypy for static typing
+- pytest for testing
+
+Reason:
+
+- Fast feedback
+- Minimal configuration
+- Widely adopted modern defaults

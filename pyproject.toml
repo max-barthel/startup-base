@@ -5,6 +5,20 @@ description = "Personal baseline repository for new projects"
 requires-python = ">=3.12"
 
 [dependency-groups]
-dev = []
+dev = [
+  "ruff",
+  "mypy",
+  "pytest"
+]
 
 [tool]
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = false
