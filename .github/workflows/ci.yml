@@ -20,14 +20,18 @@ jobs:
         with:
           enable-cache: true
 
-      - name: Sync API deps
-        run: cd apps/api && uv sync --locked --all-extras
+      - name: Sync API deps (locked)
+        run: |
+          cd apps/api
+          uv sync --locked --all-extras
 
       - name: Set up Bun
         uses: oven-sh/setup-bun@v2
 
       - name: Install web deps
-        run: cd apps/web && bun install
+        run: |
+          cd apps/web
+          bun install --frozen-lockfile
 
       - name: Run CI
         run: make ci

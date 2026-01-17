@@ -22,12 +22,28 @@ Every new project starts by forking this repository and then adapting it intenti
 
 ## Quickstart
 
-This repo uses uv for dependency + venv management.
+Backend (uv):
 
 ```bash
-brew install uv  # or: curl -LsSf https://astral.sh/uv/install.sh | sh
+make api-setup
+make api-dev
+```
 
-uv sync --all-extras
-uv run pre-commit install
+Frontend (bun):
 
+```bash
+make web-setup
+make web-dev
+```
+
+Run both together:
+
+```bash
+make dev
+```
+
+Run all checks:
+
+```bash
 make ci
+```
